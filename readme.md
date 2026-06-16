@@ -1,6 +1,6 @@
 # GDiffMAE
 Implementation of our  paper "DAMS: Co-Adaptive Structural Masking and Semantic Diffusion with Dual RL Agents for Recommendation".
-![](https://github.com/akajinchen/GDiffMAE/blob/1235aa2f2f84a3512bc3e0d6858a92a75ea420c1/framework.png)
+![](framework.png)
 propose a co-adaptive structural Masking and Semantic diffusion with Dual  Agents for Recommendation (DAMS), which integrates contrastive learning to align structural and semantic augmentations. Specifically, two reinforcement learning (RL)–driven policy networks continuously monitor real-time training dynamics to adaptively optimize the core hyperparameters of the respective data augmentation strategies. For main view generation, an RL-driven mask policy performs degree-biased random walks, adaptively controlling walk length and ratio to preserve critical collaborative pathways while eliminating noisy edges. 
 For contrastive view generation, an RL-driven diffusion policy dynamically calibrates noise scale and guidance strength. 
 A contrastive objective then explicitly aligns the diffusion-reconstructed view with the masked main view, enforcing semantic consistency while compensating for structural loss. 
